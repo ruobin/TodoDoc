@@ -1,0 +1,13 @@
+<div [ngClass]="setClasses()">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <h2>Here is your default document: </h2>
+    <form>
+        <div class="form-group">
+            <textarea (change)="onChange(document)" class="form-control" rows="10" id="document"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
